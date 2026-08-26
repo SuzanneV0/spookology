@@ -47,7 +47,25 @@
   <main class="container">
     <section id="countdown">
       <h2>Countdown to Halloween</h2>
-      <p id="countdown-timer" aria-live="polite" aria-atomic="true">Loading...</p>
+      <div class="countdown-tombstones">
+        <div class="tombstone">
+          <span class="tombstone-value" id="cd-days">00</span>
+          <span class="tombstone-label">Days</span>
+        </div>
+        <div class="tombstone">
+          <span class="tombstone-value" id="cd-hours">00</span>
+          <span class="tombstone-label">Hours</span>
+        </div>
+        <div class="tombstone">
+          <span class="tombstone-value" id="cd-minutes">00</span>
+          <span class="tombstone-label">Min</span>
+        </div>
+        <div class="tombstone">
+          <span class="tombstone-value" id="cd-seconds">00</span>
+          <span class="tombstone-label">Sec</span>
+        </div>
+      </div>
+      <p class="sr-only" id="countdown-sr" aria-live="polite" aria-atomic="true"></p>
     </section>
 
     <section id="about">
