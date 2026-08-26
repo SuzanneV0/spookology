@@ -2,10 +2,10 @@
 :root {
   /* Light mode (default) */
   --bg: #eff1ed;
-  --nav-bg: #a0e548;
+  --nav-bg: #9a16a9;
   --nav-text: #eff1ed;
   --nav-highlight: #e45f2b;
-  --nav-highlight-text: #9a16a9;
+  --nav-highlight-text: #a0e548;
   --heading: #e45f2b;
   --text: #333333;
   --muted: #5a5a55;
@@ -22,10 +22,10 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #15170f;
-    --nav-bg: #4f7a1e;
+    --nav-bg: #5c1568;
     --nav-text: #eff1ed;
     --nav-highlight: #ff7a3d;
-    --nav-highlight-text: #e6b8f2;
+    --nav-highlight-text: #c8f08a;
     --heading: #ff8a52;
     --text: #e4e4e0;
     --muted: #b3b2a8;
@@ -39,10 +39,10 @@
 /* Dark mode: explicit user toggle wins either direction */
 :root[data-theme="dark"] {
   --bg: #15170f;
-  --nav-bg: #4f7a1e;
+  --nav-bg: #5c1568;
   --nav-text: #eff1ed;
   --nav-highlight: #ff7a3d;
-  --nav-highlight-text: #e6b8f2;
+  --nav-highlight-text: #c8f08a;
   --heading: #ff8a52;
   --text: #e4e4e0;
   --muted: #b3b2a8;
@@ -171,19 +171,10 @@ img {
 }
 
 .nav-links a:hover,
-.nav-links a:focus-visible {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.nav-links a.active {
+.nav-links a:focus-visible,
+.nav-links a:active {
   background: var(--nav-highlight);
   color: var(--nav-highlight-text);
-  font-weight: 600;
-}
-
-.nav-cta {
-  background: var(--nav-highlight) !important;
-  color: var(--nav-highlight-text) !important;
   font-weight: 600;
 }
 
