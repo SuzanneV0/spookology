@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halloween Spirit Trope Quiz · Spooky Night</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8E%83</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">🎃 Spooky Night</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="costumes.html">Costumes</a></li>
+        <li><a href="crafts.html">Crafts</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="stencils.html">Stencils</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <h1>What Is Your Halloween Spirit Trope?</h1>
+    <p>Answer a few questions to find out which classic Halloween character matches your vibe.</p>
+  </header>
+
+  <main class="page-content container">
+    <section aria-labelledby="quiz-heading">
+      <h2 id="quiz-heading" class="sr-only">Quiz</h2>
+
+      <form id="quiz-form" novalidate>
+        <fieldset class="quiz-question">
+          <legend>1. Pick your ideal Halloween night in:</legend>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1" data-trope="ghost" /><span>Drifting around the party unseen, scaring friends from behind doors.</span></label>
+            <label class="quiz-option"><input type="radio" name="q1" data-trope="vampire" /><span>Hosting an elegant midnight gathering with dramatic flair.</span></label>
+            <label class="quiz-option"><input type="radio" name="q1" data-trope="witch" /><span>Brewing something mysterious in the kitchen.</span></label>
+            <label class="quiz-option"><input type="radio" name="q1" data-trope="mummy" /><span>Wrapped in a blanket, binge-watching old horror movies.</span></label>
+            <label class="quiz-option"><input type="radio" name="q1" data-trope="zombie" /><span>Shuffling from house to house for candy, slow and steady.</span></label>
+            <label class="quiz-option"><input type="radio" name="q1" data-trope="frankenstein" /><span>Building an elaborate DIY costume or decoration from spare parts.</span></label>
+            <label class="quiz-option"><input type="radio" name="q1" data-trope="black-cat" /><span>Sneaking around, watching the chaos from a safe distance.</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>2. Choose a candy:</legend>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2" data-trope="ghost" /><span>Marshmallow anything — light, sweet, a little see-through.</span></label>
+            <label class="quiz-option"><input type="radio" name="q2" data-trope="vampire" /><span>Red licorice, obviously.</span></label>
+            <label class="quiz-option"><input type="radio" name="q2" data-trope="witch" /><span>Something sour that makes your face twist.</span></label>
+            <label class="quiz-option"><input type="radio" name="q2" data-trope="mummy" /><span>Anything wrapped in extra packaging.</span></label>
+            <label class="quiz-option"><input type="radio" name="q2" data-trope="zombie" /><span>Whatever's left at the bottom of the bowl.</span></label>
+            <label class="quiz-option"><input type="radio" name="q2" data-trope="frankenstein" /><span>A weird candy mashup no one else wants to try.</span></label>
+            <label class="quiz-option"><input type="radio" name="q2" data-trope="black-cat" /><span>Whatever you can steal from a sibling's bag.</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>3. Pick a superpower:</legend>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q3" data-trope="ghost" /><span>Walking through walls.</span></label>
+            <label class="quiz-option"><input type="radio" name="q3" data-trope="vampire" /><span>Immortality.</span></label>
+            <label class="quiz-option"><input type="radio" name="q3" data-trope="witch" /><span>Spellcasting.</span></label>
+            <label class="quiz-option"><input type="radio" name="q3" data-trope="mummy" /><span>Unbreakable resilience.</span></label>
+            <label class="quiz-option"><input type="radio" name="q3" data-trope="zombie" /><span>Never getting tired.</span></label>
+            <label class="quiz-option"><input type="radio" name="q3" data-trope="frankenstein" /><span>Superhuman strength, stitched from parts.</span></label>
+            <label class="quiz-option"><input type="radio" name="q3" data-trope="black-cat" /><span>Nine lives and perfect luck.</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="quiz-question">
+          <legend>4. How do you handle a scary movie?</legend>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q4" data-trope="ghost" /><span>Float out of the room before the jump scare.</span></label>
+            <label class="quiz-option"><input type="radio" name="q4" data-trope="vampire" /><span>Watch calmly — you've seen scarier.</span></label>
+            <label class="quiz-option"><input type="radio" name="q4" data-trope="witch" /><span>Predict the twist before it happens.</span></label>
+            <label class="quiz-option"><input type="radio" name="q4" data-trope="mummy" /><span>Hide under a blanket the whole time.</span></label>
+            <label class="quiz-option"><input type="radio" name="q4" data-trope="zombie" /><span>Fall asleep halfway through.</span></label>
+            <label class="quiz-option"><input type="radio" name="q4" data-trope="frankenstein" /><span>Take notes for your own Halloween project.</span></label>
+            <label class="quiz-option"><input type="radio" name="q4" data-trope="black-cat" /><span>Watch through your fingers, ready to bolt.</span></label>
+          </div>
+        </fieldset>
+
+        <button class="btn" type="submit">Reveal My Halloween Spirit</button>
+      </form>
+
+      <div id="quiz-result" hidden>
+        <h3 id="quiz-result-title"></h3>
+        <p id="quiz-result-text"></p>
+        <button class="btn btn-secondary" id="quiz-retake" type="button">Retake the Quiz</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="costumes.html">Costumes</a></li>
+      <li><a href="crafts.html">Crafts</a></li>
+      <li><a href="movies.html">Movies</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="stencils.html">Stencils</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p>&copy; 2026 Spooky Night. Made with 🖤 for Halloween.</p>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
