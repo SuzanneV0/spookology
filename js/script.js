@@ -10,6 +10,12 @@ function getHalloweenDate() {
   return halloween;
 }
 
+function pad(n) {
+  return String(n).padStart(2, "0");
+}
+
+let lastAnnouncedMinute = null;
+
 function updateCountdown() {
   const target = getHalloweenDate();
   const now = new Date();
@@ -20,9 +26,22 @@ function updateCountdown() {
   const minutes = Math.floor((diffMs / (1000 * 60)) % 60);
   const seconds = Math.floor((diffMs / 1000) % 60);
 
-  const el = document.getElementById("countdown-timer");
-  if (el) {
-    el.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  const daysEl = document.getElementById("cd-days");
+  const hoursEl = document.getElementById("cd-hours");
+  const minutesEl = document.getElementById("cd-minutes");
+  const secondsEl = document.getElementById("cd-seconds");
+
+  if (daysEl) daysEl.textContent = pad(days);
+  if (hoursEl) hoursEl.textContent = pad(hours);
+  if (minutesEl) minutesEl.textContent = pad(minutes);
+  if (secondsEl) secondsEl.textContent = pad(seconds);
+
+  // Announce to screen readers at most once a minute, instead of every second.
+  const srEl = document.getElementById("countdown-sr");
+  if (srEl && minutes !== lastAnnouncedMinute) {
+    lastAnnouncedMinute = minutes;
+    srEl.textContent =
+      days + " days, " + hours + " hours, " + minutes + " minutes until Halloween.";
   }
 }
 
