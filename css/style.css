@@ -695,6 +695,21 @@ footer {
   background: var(--bg);
 }
 
+.item-image {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem;
+  border: 1px solid var(--card-border);
+}
+
+.article-figure img {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
 .stencil-svg-box {
   aspect-ratio: 1 / 1;
   width: 100%;
