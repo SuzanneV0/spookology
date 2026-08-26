@@ -252,7 +252,9 @@ section h2 {
   margin-bottom: 0.75rem;
 }
 
-#countdown {
+#countdown,
+#about,
+#features {
   text-align: center;
 }
 
