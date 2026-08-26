@@ -171,19 +171,10 @@ img {
 }
 
 .nav-links a:hover,
-.nav-links a:focus-visible {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.nav-links a.active {
+.nav-links a:focus-visible,
+.nav-links a:active {
   background: var(--nav-highlight);
   color: var(--nav-highlight-text);
-  font-weight: 600;
-}
-
-.nav-cta {
-  background: var(--nav-highlight) !important;
-  color: var(--nav-highlight-text) !important;
   font-weight: 600;
 }
 
