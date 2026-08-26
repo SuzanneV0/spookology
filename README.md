@@ -31,4 +31,4 @@ npx serve .
 ## Contributing
 
 This is a beginner-friendly starter project. Small improvements are welcome — typo fixes,
-accesibility tweaks, or new spooky sections!
+accessibility tweaks, or new spooky sections!
