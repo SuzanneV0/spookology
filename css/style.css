@@ -259,6 +259,17 @@ section h2 {
   text-align: center;
 }
 
+#about,
+#features {
+  background: #2e2e2e;
+  padding: 1.75rem 1.5rem;
+  border-radius: 0.75rem;
+}
+
+#about p {
+  color: #eff1ed;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
