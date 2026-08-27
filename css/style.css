@@ -125,6 +125,16 @@ img {
   border: 2px solid var(--heading);
 }
 
+.btn-glow:hover,
+.btn-glow:focus-visible {
+  /* ring + ring-offset effect, matching the feature card hover glow */
+  box-shadow:
+    0 0 0 4px var(--bg),
+    0 0 0 8px var(--ring),
+    0 0 24px 6px rgba(34, 197, 94, 0.55);
+  outline: none;
+}
+
 /* ---------- Navigation ---------- */
 .site-nav {
   background: var(--nav-bg);
