@@ -52,6 +52,34 @@
     });
   }
 
+  /* ---- Mobile hamburger nav ---- */
+  var navToggle = document.getElementById("nav-toggle");
+  var navLinks = document.getElementById("nav-links");
+  var MOBILE_BREAKPOINT = 860;
+
+  function closeNavMenu() {
+    if (!navLinks || !navToggle) return;
+    navLinks.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.textContent = "☰";
+  }
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener("click", function () {
+      var isOpen = navLinks.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      navToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    navLinks.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") closeNavMenu();
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > MOBILE_BREAKPOINT) closeNavMenu();
+    });
+  }
+
   /* ---- Newsletter modal ---- */
   var modal = document.getElementById("newsletter-modal");
   var openBtns = document.querySelectorAll("[data-open-newsletter]");
