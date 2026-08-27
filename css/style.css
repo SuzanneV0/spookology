@@ -245,6 +245,13 @@ main.page-content {
   padding: 1.5rem;
 }
 
+/* Homepage main has "container" only (not "page-content") -- let it use
+   the full page width instead of the 720px reading-width cap used by the
+   article/list pages. */
+main.container:not(.page-content) {
+  max-width: none;
+}
+
 section {
   margin-bottom: 2.5rem;
 }
