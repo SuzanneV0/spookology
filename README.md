@@ -1,4 +1,4 @@
-# Spooky Night 🎃
+# Spookology 🎃
 
 A small, static Halloween website starter — a landing page with a live countdown to October 31st.
 
