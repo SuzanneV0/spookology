@@ -695,6 +695,28 @@ footer {
   background: var(--bg);
 }
 
+.item-image {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.6rem;
+  border: 1px solid var(--card-border);
+}
+
+/* Portrait costume photos: crop from the bottom instead of the center
+   so faces/heads stay in frame. */
+.item-image-top {
+  object-position: top;
+}
+
+.article-figure img {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
 .stencil-svg-box {
   aspect-ratio: 1 / 1;
   width: 100%;
